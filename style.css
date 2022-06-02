@@ -15,6 +15,51 @@ html {
 body {
     margin: 0
 }
+.w3-container{
+    color :#1600df;
+}
+
+
+.p1{
+    color : red;
+}
+.p2{
+    color : red;
+}
+
+.selected{
+    border-bottom: 2px solid rgb(231, 9, 32);
+    }
+      
+.right-link {
+            display: inline-block;
+            text-align: right;
+            padding: 14px 20px;
+            flex:1 1 100px;
+            top : 0;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: bold;
+            } 
+nav{
+display: flex;
+position: fixed;
+top:0;
+width: 100%;
+background-color: rgb(251, 255, 196);
+overflow: auto;
+height: auto;
+}
+
+.w3-bar {
+    background-color: rgb(65, 2, 66);
+    padding:1px;
+    text-decoration: double;
+  }
+.w3-bar a:hover {
+    background: rgb(235, 2, 134);
+  }
+
 
 button,article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
     color :#0d18eb;
@@ -24,11 +69,16 @@ button,article, aside, details, figcaption, figure, footer, header, main, menu, 
     background-color: #0b6ae7; /* Blue  */
     border: none;
     color: rgb(255, 255, 255);
-    padding: 14px 40px;
+    padding: 1px 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+  }
+
+  .button1 a:hover {
+      color: #00ffff;
+      background-color: #128712;
   }
   .button2 {
     background-color: #fafafa; /* Green */
