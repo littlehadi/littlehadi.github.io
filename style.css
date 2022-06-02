@@ -17,8 +17,19 @@ body {
 }
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
-    color = blue;
+    color :#0d18eb;
 }
+
+.button1 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
 
 summary {
     display: list-item
@@ -42,7 +53,7 @@ audio:not([controls]) {
 }
 
 a {
-    background-color: transparent
+    background-color: darkblue
 }
 
     a:active, a:hover {
@@ -65,7 +76,7 @@ dfn {
 
 mark {
     background: #ff0;
-    color: #000
+    color: rgb(32, 128, 43)
 }
 
 small {
@@ -115,13 +126,6 @@ optgroup {
     font-weight: bold
 }
 
-button, input {
-    overflow: visible
-}
-
-button, select {
-    text-transform: none
-}
 
 button, [type=button], [type=reset], [type=submit] {
     -webkit-appearance: button
@@ -1743,7 +1747,7 @@ a {
 }
 
 .w3-border-pale-green, .w3-hover-border-pale-green:hover {
-    border-color: #e7ffe7 !important
+    border-color: #128712 !important
 }
 
 .w3-border-pale-yellow, .w3-hover-border-pale-yellow:hover {
