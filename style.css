@@ -16,21 +16,34 @@ body {
     margin: 0
 }
 
-article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
+button,article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {
     color :#0d18eb;
 }
 
 .button1 {
-    background-color: #4CAF50; /* Green */
+    background-color: #0b6ae7; /* Blue  */
     border: none;
-    color: white;
-    padding: 15px 32px;
+    color: rgb(255, 255, 255);
+    padding: 14px 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
   }
-
+  .button2 {
+    background-color: #fafafa; /* Green */
+    border: none;
+    margin: 0;
+    position: absolute;
+    /*top = 20%*/
+    left : 50%;
+    color: rgb(232, 7, 7);
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration-style: bold;
+    display: inline-block;
+    font-size: 16px;
+  }
 summary {
     display: list-item
 }
@@ -53,7 +66,7 @@ audio:not([controls]) {
 }
 
 a {
-    background-color: darkblue
+    background-color: rgb(125, 200, 250)
 }
 
     a:active, a:hover {
@@ -75,7 +88,7 @@ dfn {
 }
 
 mark {
-    background: #ff0;
+    background: rgb(0, 255, 60);
     color: rgb(32, 128, 43)
 }
 
@@ -183,7 +196,7 @@ textarea {
 html, body {
     font-family: Verdana,sans-serif;
     font-size: 15px;
-    line-height: 1.5
+    line-height: 6.5
 }
 
 html {
