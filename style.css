@@ -26,19 +26,56 @@ body {
 .w3-container{
     padding : 0px;
     margin: auto;
-    color :#1600df;
+    color :hsl(246, 43%, 78%);
 }
 .p0{
     padding : 0px;
+    font-size: 100px;
+        font-weight: bold;
     color : red;
 }
 .p1{
     padding : 0px;
+    font-size: 50px;
+        font-weight: bold;
     color : red;
+}
+.h1 {
+    padding : 0px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    color : rgb(220, 12, 12);
+}
+.h3{
+    padding : 10px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: right;
+    color : rgb(220, 12, 12);
+}
+
+.p3{
+    padding : 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color : rgb(248, 248, 248);
+}
+
+.p4{
+    font-size: 20px;
+    font-weight: none;
+    margin: auto;
+  width: 100%;
+  padding: 10px;
+    color : rgb(255, 255, 255);
 }
 .p2{
     padding : 10px;
-    color : red;
+    font-size: 50px;
+        font-weight: bold;
+    color : rgb(187, 0, 0);
 }
 
 .selected{
@@ -65,10 +102,16 @@ background-color: rgb(251, 255, 196);
 overflow: auto;
 height: auto;
 }
-
+a {
+    color: red;
+        background-color: none
+}
 .w3-bar {
-    background-color: rgb(65, 2, 66);
+    background-color: rgb(251, 255, 196);
     padding:1px;
+    font-size: 50px;
+    
+    
   }
 .w3-bar a:hover {
     background: rgb(235, 2, 134);
@@ -79,22 +122,67 @@ button,article, aside, details, figcaption, figure, footer, header, main, menu, 
     color :#0d18eb;
 }
 
-.button1 {
-    background-color: #0b6ae7; /* Blue  */
+
+.btn  {/* Blue  */
     border: rgb(13, 185, 96);
     color: rgb(255, 255, 255);
     padding: 1px 40px;
     text-align: center;
-    text-decoration: none;
+    text-decoration: dotted;
     display: inline-block;
+    font-size: 30px; /* Green */
+    border: greenyellow;
+    margin: auto;
+    position: center;
+    /*top = 20%*/
+    color: rgb(232, 7, 7);
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration-style: bold;
+    display: inline-block;
+    font-size: 16px;
+    display: block;
+    width: 200px; 
+
+}
+
+.btnn {
+    background-color: #2ca40b; /* Blue  */
+    color: rgb(255, 255, 255);
     font-size: 30px;
-    
+    display: inline-block;;
+    width: 200px; 
+    margin: auto;
+    position: center;
+    /*top = 20%*/
+    color: rgb(232, 7, 7);
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration-style: bold;
+    display: inline-block;
+    font-size: 16px;
+    display: block;
+    width: 200px; 
+}
+  .btnn a:hover {
+      color: #df3a0c;
+      background-color: #e506a6;
+  }
+  .button1 {
+    background-color: #fafafa; /* Green */
+    border: none;
+    margin: 0;
+    position: absolute;
+    /*top = 20%*/
+    left : 40%;
+    color: rgb(232, 7, 7);
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration-style: bold;
+    display: inline-block;
+    font-size: 16px;
   }
 
-  .button1 a:hover {
-      color: #df3a0c;
-      background-color: #128712;
-  }
   .button2 {
     background-color: #fafafa; /* Green */
     border: none;
@@ -109,6 +197,26 @@ button,article, aside, details, figcaption, figure, footer, header, main, menu, 
     display: inline-block;
     font-size: 16px;
   }
+
+  .button3 {
+    background-color: #fafafa; /* Green */
+    border: none;
+    margin: 0;
+    position: absolute;
+    /*top = 20%*/
+    left : 50%;
+    color: rgb(232, 7, 7);
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration-style: bold;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .button1 a:hover {
+    color: #df0cd5;
+    background-color: #c1d412d3;
+}
 summary {
     display: list-item
 }
@@ -128,10 +236,6 @@ audio:not([controls]) {
 
 [hidden], template {
     display: none
-}
-
-a {
-    background-color: rgb(125, 200, 250)
 }
 
     a:active, a:hover {
@@ -294,9 +398,6 @@ img {
     vertical-align: middle
 }
 
-a {
-    color: inherit
-}
 
 .w3-table, .w3-table-all {
     border-collapse: collapse;
@@ -543,7 +644,8 @@ a {
 
 .w3-center .w3-bar {
     display: inline-block;
-    width: auto
+    width: auto;
+    padding: 8px 16px;
 }
 
 .w3-bar .w3-bar-item {
@@ -575,7 +677,7 @@ a {
     outline: 0
 }
 
-.w3-bar-block.w3-center .w3-bar-item {
+.w3-bar-block .w3-center .w3-bar-item {
     text-align: center
 }
 
