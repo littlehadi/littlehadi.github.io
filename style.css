@@ -25,7 +25,8 @@ body {
 }
 
 .container{
-    color: #00bcd4;
+    color: #ecefef;
+    margin : auto;
 }
 .w3-container{
     padding : 0px;
@@ -140,7 +141,7 @@ padding: 10px;
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-.selected{
+.link-selected{
     border-bottom: 2px salmon rgb(231, 9, 32);
     }
       
@@ -216,7 +217,7 @@ a {
   /* Centered text */
   .centered {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -277,7 +278,7 @@ button,article, aside, details, figcaption, figure, footer, header, main, menu, 
     margin: 0;
     position: absolute;
     /*top = 20%*/
-    left : 40%;
+    left :30%;
     color: rgb(232, 7, 7);
     padding: 14px 40px;
     text-align: center;
