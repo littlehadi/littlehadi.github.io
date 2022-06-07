@@ -258,18 +258,16 @@ button,article, aside, details, figcaption, figure, footer, header, main, menu, 
 
 
 .btn  {/* Blue  */
-    border: rgb(13, 185, 96);
-    color: rgb(255, 255, 255);
     padding: 1px 40px;
     text-align: center;
     text-decoration: dotted;
     display: inline-block;
-    font-size: 30px; /* Green */
+    font-size: 20px; /* Green */
     border: greenyellow;
     margin: auto;
     position: center;
-    /*top = 20%*/
-    color: rgb(232, 7, 7);
+    top : 20%;
+    color: rgb(14, 14, 14);
     padding: 14px 40px;
     text-align: center;
     text-decoration-style: bold;
