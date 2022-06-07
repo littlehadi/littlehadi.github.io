@@ -10,7 +10,7 @@ html,body{overflow-y: scroll; }
 .scroll {
     height:100%;
     overflow:scroll; 
-    padding-bottom: 50rem;
+    padding-bottom: 30rem;
   }
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html {
