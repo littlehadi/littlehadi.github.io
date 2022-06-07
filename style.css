@@ -17,7 +17,18 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
+.bodyy {
+    margin: 0;
+    height: 100%;
+    overflow-x: auto;
 
+overflow: hidden;
+padding-top: 1px;
+    font-size:1.2em;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(191, 174, 212);
+}
 body {
         margin: 0;
         height: 100%;
@@ -30,9 +41,51 @@ body {
         font-family: 'Times New Roman', Times, serif;
         background-color: rgb(191, 174, 212);
 }
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+  header.masthead h1, header.masthead .h1 {
+    font-size: 2.25rem;
+  }
+  @media (min-width: 992px) {
+    header.masthead {
+      height: 100vh;
+      min-height: 40rem;
+      padding-top: 4.5rem;
+      padding-bottom: 0;
+    }
+    header.masthead p {
+      font-size: 1.15rem;
+    }
+    header.masthead h1, header.masthead .h1 {
+      font-size: 3rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    header.masthead h1, header.masthead .h1 {
+      font-size: 3.5rem;
+    }
+  }
 
-.container{
-    color: #ecefef;
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+    color: #03d8d8;
     margin : auto;
 }
 .w3-container{
@@ -280,11 +333,8 @@ button,article, aside, details, figcaption, figure, footer, header, main, menu, 
 
 .btnn {
     background-color: #2ca40b; /* Blue  */
-    color: rgb(255, 255, 255);
     font-size: 30px;
-    display: inline-block;;
-    width: 200px; 
-    margin: auto;
+    margin: 10px;
     position: center;
     /*top = 20%*/
     color: rgb(232, 7, 7);
@@ -293,7 +343,7 @@ button,article, aside, details, figcaption, figure, footer, header, main, menu, 
     text-decoration-style: bold;
     display: inline-block;
     font-size: 16px;
-    display: block;
+    display: ruby-base;
     width: 200px; 
 }
   .btnn a:hover {
