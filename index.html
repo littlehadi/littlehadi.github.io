@@ -21,7 +21,7 @@
 
 
 <!-- Navigation -->
-<nav class="w3-bar"><b> Barber Town</b></a>
+<nav class="w3-bar"><span class="w3-padding w3-blue w3-opacity-min"><b>BT</b></span></a>
   <div class="right-link">
   <a href="index.html" name="options" id="option1" autocomplete="off" class="link selected">Home</a>
   <a href="aboutus.html">About Us</a>
@@ -34,17 +34,16 @@
 
 
 
-<!-- Barber Description -->
-  <div class="container">
-    <img src="https://www.fashionbeans.com/wp-content/uploads/2018/06/london-barbers-ruffian.jpg" alt="Snow" style="width:100%;">
-    <div class="centered">
-  <h2 class="p0"> Short on Time? </h2>
-  <p class="p1">Head to Barber Town! The Best Barber in Town!</p>
-  <p class="p2">OPEN 24/7</p>
-
-</div>
-</div>
-</section>
+<!-- Barber Description -->]
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="https://www.fashionbeans.com/wp-content/uploads/2018/06/london-barbers-ruffian.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>BT</b></span> <span class="w3-hide-small w3-text-light-grey">Barber Town</span></h1>
+    <h2 class="p0"> Short on Time? </h2>
+    <p class="p1">Head to Barber Town! The Best Barber in Town!</p>
+    <p class="p2">OPEN 24/7</p>
+  </div>
+</header>
 
 
 <!--<a href="aboutus.html" class="button1"> <button2>BOOK NOW</button2> </a>*/ -->
@@ -60,36 +59,29 @@
                 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-blue w3-xlarge">
+<footer class="w3-container w3-padding-48 w3-center w3-blue w3-xlarge">
   <a href="#"><i class="fa fa-facebook-official"></i></a>
   <a href="#"><i class="fa fa-pinterest-p"></i></a>
   <a href="#"><i class="fa fa-twitter"></i></a>
   <a href="#"><i class="fa fa-flickr"></i></a>
   <a href="#"><i class="fa fa-linkedin"></i></a>
   <p class="w3-medium"> Powered by <a href="aboutus.html">w3.css</a> </p>
+
+  <tbody>
+    <tr>
+      <td>Phone Number:</td>
+      <td class="p1">(613)123 4567 - </td>
+    </tr> 
+    <tr>
+      <td>Email Inquiries:</td>
+      <td>BarberTown@hotmail.com - </td>
+    </tr>
+    <tr>
+      <td>Address:</td>
+      <td> 1234 Home Street, Ottawa, ON, K1K 1K1</td>
+    </tr>
+  </tbody>
 </footer>
-
-
-
-<script>
-  // Automatic Slideshow - change image every 3 seconds
-  var myIndex = 0;
-  carousel();
-  
-  function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 3000);
-  }
-  
-  
-  </script>
 </body>
 </html>
 
