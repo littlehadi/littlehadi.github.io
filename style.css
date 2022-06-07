@@ -144,10 +144,13 @@ padding: 10px;
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-.link-selected{
-    border-bottom: 2px salmon rgb(231, 9, 32);
+.linkselected{
+    border-bottom: 10px rgb(231, 9, 32);
     }
       
+.nav-pill{
+    color: red;
+}
 .right-link {
             display: inline-block;
             text-align: right;
@@ -1616,8 +1619,14 @@ img {
 }
 
 .w3-right {
-    float: right !important
+    float: right;
 }
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
 
 .w3-button:hover {
     color: #000 !important;
