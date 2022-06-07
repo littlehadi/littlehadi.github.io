@@ -7,6 +7,11 @@ html,body{overflow-y: scroll; }
 *, *:before, *:after {
     box-sizing: inherit
 }
+.scroll {
+    height:100%;
+    overflow:scroll; 
+    padding-bottom: 50rem;
+  }
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html {
     -ms-text-size-adjust: 100%;
@@ -2043,7 +2048,7 @@ img {
 
   .price {
     color:white;
-    font-size: 150px;
+    font-size: 80px;
     font-weight: 800;
     padding-top:-80% !important;
   }
