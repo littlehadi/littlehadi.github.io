@@ -17,7 +17,7 @@ body {
         margin: 0;
         height: 100%;
     overflow: hidden;
-    padding-top: 200px;
+    padding-top: 150px;
         font-size:1.2em;
         line-height: 1.6;
         font-family: 'Times New Roman', Times, serif;
@@ -45,18 +45,20 @@ body {
         font-weight: bold;
     color : red;
 }
-.h1 {
-    padding : 0px;
-    font-size: 50px;
-    font-weight: bold;
-    text-align: left;
-    color : rgb(220, 12, 12);
-}
+
 .h3{
     padding : 10px;
     font-size: 50px;
     font-weight: bold;
     text-align: right;
+    color : rgb(220, 12, 12);
+}
+
+.h9{
+    padding : 0px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
     color : rgb(220, 12, 12);
 }
 
@@ -1623,10 +1625,10 @@ img {
 }
 
 .center-block {
-    display: block;
     margin-left: auto;
     margin-right: auto;
- }
+ height: 1000px; width: 20000px; overflow: hidden; }
+
 
 .w3-button:hover {
     color: #000 !important;
