@@ -39,12 +39,12 @@ body {
         font-size:1.2em;
         line-height: 1.6;
         font-family: 'Times New Roman', Times, serif;
-        background-color: rgb(191, 174, 212);
+        background-color: rgba(6, 4, 75, 0.995);
 }
 header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 4.5rem);
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(20, 4, 198, 0.78) 120%), url("../assets/img/bg-masthead.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -111,11 +111,159 @@ header.masthead {
     padding-top: 100px;
     font-weight: bold;
     text-align: center;
-    color : rgb(220, 12, 12);
+    
+    color : rgb(4, 171, 209);
     padding-right: 1000px;
     font-size: 60px;
-}
 
+}
+header .item {
+    height: 100vh;
+    position: relative;
+  }
+  header .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  header .item .cover {
+    padding: 75px 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+  }
+  header .item .cover .header-content {
+    position: relative;
+    padding: 56px;
+    overflow: hidden;
+  }
+  header .item .cover .header-content .line {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border: 9px solid rgb(14, 0, 142);
+    -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+    clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+  }
+  header .item .cover .header-content h2 {
+    font-weight: 300;
+    font-size: 35px;
+    color: #fff;
+  }
+  header .item .cover .header-content h1 {
+    font-size: 56px;
+    font-weight: 600;
+    margin: 5px 0 20px;
+    word-spacing: 3px;
+    color: #fff;
+  }
+  header .item .cover .header-content h4 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    color: #fff;
+  }
+  header .owl-item.active h1 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    animation-delay: 0.3s;
+  }
+  header .owl-item.active h2 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    animation-delay: 0.3s;
+  }
+  header .owl-item.active h4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    animation-delay: 0.3s;
+  }
+  header .owl-item.active .line {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInLeft;
+    animation-delay: 0.3s;
+  }
+  header .owl-nav .owl-prev {
+    position: absolute;
+    left: 15px;
+    top: 43%;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    background: rgba(0, 0, 0, 0.5) !important;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    position: absolute;
+    display: block;
+    z-index: 1000;
+    border-radius: 0;
+  }
+  header .owl-nav .owl-prev span {
+    font-size: 1.6875rem;
+    color: #fff;
+  }
+  header .owl-nav .owl-prev:focus {
+    outline: 0;
+  }
+  header .owl-nav .owl-prev:hover {
+    background: #000 !important;
+  }
+  header .owl-nav .owl-next {
+    position: absolute;
+    right: 15px;
+    top: 43%;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    background: rgba(0, 0, 0, 0.5) !important;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    position: absolute;
+    display: block;
+    z-index: 1000;
+    border-radius: 0;
+  }
+  header .owl-nav .owl-next span {
+    font-size: 1.6875rem;
+    color: #fff;
+  }
+  header .owl-nav .owl-next:focus {
+    outline: 0;
+  }
+  header .owl-nav .owl-next:hover {
+    background: #000 !important;
+  }
+  header:hover .owl-prev {
+    left: 0px;
+    opacity: 1;
+  }
+  header:hover .owl-next {
+    right: 0px;
+    opacity: 1;
+  }
 .h3{
     padding : 10px;
     font-size: 50px;
@@ -130,19 +278,33 @@ header.masthead {
     position: relative;
   z-index: 1;
   text-align: center;
-  border: 3px solid #73AD21;
+  border: 3px solid #ffffff;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    color : rgb(220, 12, 12);
+    color : rgb(4, 171, 209);
 }
-
-.p3{
-    padding : 10px;
-    font-size: 20px;
+.h10{
+  border: 3px solid #ffffff;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
-    color : rgb(152, 224, 8);
+    color : rgb(4, 171, 209);
+}
+.p3{
+    padding : 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color : rgb(252, 252, 252);
+}
+
+.p7{
+    padding : 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color : rgb(3, 3, 239);
 }
 
 .p4{
@@ -169,12 +331,45 @@ width: 50%;
     text-align: center;
     color : rgb(4, 171, 209);
 }
-.p5{
-margin: auto;
+
+.h7 {
+    padding : 0px;
+    position: relative;
+  z-index: 1;
+  text-align: center;
+  border: 3px solid #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color : rgb(255, 255, 255);
+    font-size: 50px;
+    margin: auto;
 width: 50%;
-color:#128712;
-padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    color : rgb(4, 171, 209);
 }
+.w3-bblue{
+    background-color: rgba(20, 4, 198, 0.78);
+}
+
+.p5{
+
+        font-size: 30px;
+        font-weight: none;
+        margin: auto;
+      width: 100%;
+      padding: 10px;
+        color : rgb(255, 255, 255)
+
+    }
+
+    .p6{
+
+
+        color : rgb(255, 255, 255)
+
+    }
 
   /* Dropdown Button */
 .dropbtn {
@@ -224,9 +419,9 @@ padding: 10px;
 .linkselected{
     border-bottom: 10px rgb(231, 9, 32);
     }
-      
-.nav-pill{
-    color: red;
+    
+.nav-pills > a.active {
+    background-color: rgba(20, 4, 198, 0.78) !important;
 }
 .right-link {
             display: inline-block;
@@ -244,7 +439,7 @@ display: flex;
 position: fixed;
 top:0;
 width: 100%;
-background-color: rgb(251, 255, 196);
+background-color: rgb(3, 3, 3);
 overflow: auto;
 height: auto;
 }
@@ -320,7 +515,7 @@ button,article, aside, details, figcaption, figure, footer, header, main, menu, 
     margin: auto;
     position: center;
     top : 20%;
-    color: rgb(14, 14, 14);
+    color: rgb(255, 255, 255);
     padding: 14px 40px;
     text-align: center;
     text-decoration-style: bold;
@@ -331,13 +526,31 @@ button,article, aside, details, figcaption, figure, footer, header, main, menu, 
 
 }
 
+.btn1  {/* Blue  */
+    display: inline-block;
+    font-size: 2px; /* Green */
+    margin: auto;
+    position: center;
+    top : 20%;
+    background-color: rgba(20, 4, 198, 0.78);
+    color: rgb(255, 255, 255);
+    padding: 20px 1px;
+    text-align: center;
+    text-decoration-style: bold;
+    display: inline-block;
+    font-size: 16px;
+    display: block;
+    width: 200px; 
+
+}
+
 .btnn {
-    background-color: #2ca40b; /* Blue  */
+    background-color: #ffffff; /* Blue  */
     font-size: 30px;
     margin: 10px;
     position: center;
     /*top = 20%*/
-    color: rgb(232, 7, 7);
+    color: #0b0ea4;;
     padding: 14px 40px;
     text-align: center;
     text-decoration-style: bold;
@@ -634,7 +847,7 @@ img {
     vertical-align: middle;
     overflow: hidden;
     text-decoration: none;
-    color: inherit;
+    color: rgb(3, 38, 238);
     background-color: inherit;
     text-align: center;
     cursor: pointer;
@@ -836,7 +1049,9 @@ img {
     width: auto;
     border: none;
     display: block;
-    outline: 0
+    outline: 0;
+    color: red;
+    background-color: sandybrown;
 }
 
 .w3-bar .w3-dropdown-hover, .w3-bar .w3-dropdown-click {
