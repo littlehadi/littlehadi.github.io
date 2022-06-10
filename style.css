@@ -50,12 +50,19 @@ header.masthead {
     background-attachment: scroll;
     background-size: cover;
   }
+
+  header.mastheadd {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.973) 0%, rgb(9, 2, 89) 150%), url("../assets/img/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
   header.masthead h1, header.masthead .h1 {
     font-size: 2.25rem;
   }
-  .bg-dark {
-    background-color: #060566!important;
-    }
   @media (min-width: 992px) {
     header.masthead {
       height: 100vh;
@@ -215,7 +222,7 @@ header .item {
     opacity: 0;
     -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
-    background: rgba(46, 45, 45, 0.5) !important;
+    background: rgba(0, 0, 0, 0.5) !important;
     width: 40px;
     cursor: pointer;
     height: 40px;
@@ -275,6 +282,32 @@ header .item {
     text-align: right;
     color : rgb(220, 12, 12);
 }
+
+hr.dashed {
+    border-top: 3px dashed rgb(255, 255, 255);
+  }
+  .vl {
+    border-left: 1px solid rgb(255, 255, 255);
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: 20px;
+    top: 10px;
+  }
+
+
+.h12{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color : rgb(4, 16, 125);
+}
+
+.h13{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    color : rgb(255, 255, 255);}
 .card-body{
     box-sizing: 100px;
 }
@@ -295,6 +328,15 @@ header .item {
     text-align: center;
     color : rgb(4, 171, 209);
 }
+.h11{
+    border: 3px solid #ffffff;
+      font-size: 50px;
+      padding-bottom: 10px;
+      font-weight: bold;
+      text-align: top;
+      color : rgb(4, 36, 164);
+  }
+
 .p3{
     padding : 10px;
     font-size: 25px;
@@ -302,7 +344,13 @@ header .item {
     text-align: center;
     color : rgb(252, 252, 252);
 }
-
+.p6{
+    padding : 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color : rgb(3, 4, 110);
+}
 .p7{
     padding : 10px;
     font-size: 25px;
@@ -322,6 +370,13 @@ header .item {
 .p2{
     padding : 10px;
     font-size: 50px;
+        font-weight: bold;
+    color : rgb(187, 0, 0);
+}
+
+.p7{
+    padding : 10px;
+    font-size: 10px;
         font-weight: bold;
     color : rgb(187, 0, 0);
 }
@@ -399,6 +454,11 @@ width: 50%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
+.dividerr{
+    color: #000;
+    background-color: #00bcd4;
+}
+
   .td{
     font-size: 20px;
 }
@@ -443,7 +503,7 @@ display: flex;
 position: fixed;
 top:0;
 width: 100%;
-background-color: rgba(3, 3, 3, 0.774);
+background-color: rgb(3, 3, 3);
 overflow: auto;
 height: auto;
 }
@@ -554,7 +614,7 @@ button,article, aside, details, figcaption, figure, footer, header, main, menu, 
     margin: auto;
     position: center;
     top : 20%;
-    background-color: rgba(4, 25, 185, 0.989);
+    background-color: rgba(55, 8, 242, 0.989);
     color: rgb(255, 255, 255);
     padding: 10px 1px;
     text-align: center;
@@ -2425,3 +2485,5 @@ flip card
     background-color: #0d18eb;
     color: #0b0ea4;
   }
+
+  
