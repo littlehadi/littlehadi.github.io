@@ -291,7 +291,7 @@ header .item {
     color : rgb(255, 255, 255);
 }
 .headingg{
-    padding-top : 150px;
+    padding-top : 110px;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
@@ -647,6 +647,23 @@ button,article, aside, details, figcaption, figure, footer, header, main, menu, 
     top : 20%;
     background-color: rgba(55, 8, 242, 0.989);
     color: rgb(255, 255, 255);
+    padding: 10px 1px;
+    text-align: center;
+    text-decoration-style: bold;
+    display: inline-block;
+    font-size: 16px;
+    display: block;
+    width: 100px; 
+
+}
+
+.btn22  {/* Blue  */
+    display: inline-block;
+    font-size: 2px; /* Green */
+    margin: auto;
+    position: center;
+    top : 20%;
+    background-color: rgb(213, 179, 9);
     padding: 10px 1px;
     text-align: center;
     text-decoration-style: bold;
