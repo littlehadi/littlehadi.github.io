@@ -283,10 +283,41 @@ header .item {
     color : rgb(220, 12, 12);
 }
 
+.heading{
+    padding : 10px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color : rgb(255, 255, 255);
+}
+.headingg{
+    padding-top : 150px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color : rgb(255, 255, 255);
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(20, 4, 198, 0.78);
+    opacity: 1; /* Firefox */
+  }
+  
+  .floatLabel { 
+    color: rgb(20, 4, 198)
+  }
 hr.dashed {
     border-top: 3px dashed rgb(255, 255, 255);
   }
   .vl {
+    border-left: 0px solid rgb(255, 255, 255);
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: 20px;
+    top: 10px;
+  }
+
+  .vll {
     border-left: 1px solid rgb(255, 255, 255);
     height: 500px;
     position: absolute;
@@ -625,7 +656,18 @@ button,article, aside, details, figcaption, figure, footer, header, main, menu, 
     width: 100px; 
 
 }
-
+.btnn1 {
+    background-color: #ffffff;
+    font-size: 30px;
+    padding-bottom: 100px;
+    position: center;
+    /*top = 20%*/
+    color: #0b0ea4;;
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration-style: bold;
+    width: 200px; 
+}
 .btnn {
     background-color: #ffffff; /* Blue  */
     font-size: 30px;
@@ -929,7 +971,7 @@ img {
     vertical-align: middle;
     overflow: hidden;
     text-decoration: none;
-    color: rgb(3, 38, 238);
+    color: rgb(255, 255, 255);
     background-color: inherit;
     text-align: center;
     cursor: pointer;
@@ -2390,6 +2432,10 @@ img {
   .bi {
     color:#00C9FF;
   }
+  .bg-dark {
+    background-color: rgb(17, 7, 124) !important
+    }
+
 
   .price {
     color:white;
@@ -2426,6 +2472,7 @@ img {
     position: absolute;
     width: 100%;
     height: 100%;
+    padding-right:  10px;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
   }
@@ -2436,11 +2483,12 @@ img {
     color: white;
     height: auto;
     padding:50px 0px;
+    padding-left: 0%;
   }
 
   /* Style the back side */
   .flip-card-back {
-    background-color: rgb(7, 29, 151);
+    background-color: rgb(255, 255, 255);
     color: black;
     transform: rotateY(180deg);
     padding:50px 0px;
